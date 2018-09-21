@@ -19,6 +19,7 @@ app.use(middleware.sessions(mongoose, session, uuidv1, MongoStore));
 // Routes
 app.use('/', routes.web)
 
+
 // Static Folder
 
 app.use('/public', middleware.static(express, path))
